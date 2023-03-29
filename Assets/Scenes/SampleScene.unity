@@ -1703,6 +1703,7 @@ MonoBehaviour:
   REDInputField: {fileID: 194488559}
   GREENInputField: {fileID: 674984230}
   BLUEInputField: {fileID: 377761851}
+  isTestMode: 0
 --- !u!1 &2089513741
 GameObject:
   m_ObjectHideFlags: 0
