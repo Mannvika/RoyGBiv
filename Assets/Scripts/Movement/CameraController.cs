@@ -9,7 +9,7 @@ namespace RoyGBiv.Movement
         private PlayerMovement player = null;
 
         [SerializeField]
-        private Vector3 offset =  Vector3.zero;
+        private float offset =  0f;
 
         void Start() {
             player = FindObjectOfType<PlayerMovement>();
@@ -17,7 +17,7 @@ namespace RoyGBiv.Movement
 
         void LateUpdate() {
 
-            this.transform.position = player.transform.position - offset;
+            this.transform.position = new Vector3(player.transform.position.x - offset, transform.position.y, - 10);
         }
     }
 

@@ -16,7 +16,7 @@ namespace RoyGBiv.Core {
         public void ChangeColor(float r, float g, float b) {
             player.color = new Color(r, g, b, 1f);
             player.GetComponentInChildren<Light2D>().color = new Color(r, g, b, 0.85f);
-            //networkManager.SendColors((int)r*255, (int)g *255, (int)b *255);
+            networkManager.SendColors(r, g, b);
         }
     }
 }

@@ -12,7 +12,7 @@ namespace RoyGBiv.Environment {
         }
         void Update() {
             if(transform.position.x < platformDestructionPoint.transform.position.x) {
-                Destroy(gameObject);
+                gameObject.SetActive(false);
             }
         }
     }

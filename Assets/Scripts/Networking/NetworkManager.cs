@@ -14,7 +14,7 @@ namespace RoyGBiv.Networking {
 
         NetworkStream stream = null;
 
-        private void Awake() {
+        private void Start() {
             if (!isTestMode) {
                 ConnectToServer();
             }
@@ -61,7 +61,7 @@ namespace RoyGBiv.Networking {
             }
         }
 
-        public void SendColors(int r, int g, int b) {
+        public void SendColors(float r, float g, float b) {
             Debug.Log("R: " + r + "G: " + g + "B: " + b);
 
              string rgb = "R" + r + "G" + g + "B" + b;
