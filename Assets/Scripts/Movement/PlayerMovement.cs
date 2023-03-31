@@ -97,7 +97,7 @@ namespace RoyGBiv.Movement
             }
 
             if (collision.collider.CompareTag("deathzone")) {
-                gameManager.RestartGame();
+                gameManager.Die();
             }
         }
         private void Jump() {
